@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#42CCDD"
+    android:layout_height="match_parent"
+    tools:context=".RegistroDieta">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="Cuéntanos tu progreso"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/etdia"
+        android:layout_width="113dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toEndOf="@+id/btndia"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <Button
+        android:id="@+id/btndia"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_r"
+        android:onClick="mostrarcalendario"
+        android:text="¿Que día es?"
+        app:layout_constraintStart_toEndOf="@+id/imdia"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <ImageView
+        android:id="@+id/imdia"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:srcCompat="@drawable/ic_action_age" />
+
+    <Button
+        android:id="@+id/btnpeso"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_r"
+        android:text="Peso"
+        app:layout_constraintStart_toEndOf="@+id/imsang"
+        app:layout_constraintTop_toBottomOf="@+id/btndia" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imsang"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imdia"
+        app:srcCompat="@drawable/ic_action_gota" />
+
+
+
+    <ImageView
+        android:id="@+id/imcm1"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imsang"
+        app:srcCompat="@drawable/ic_action_cm" />
+
+    <Button
+        android:id="@+id/btncm1"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_r"
+        android:text="CM brazo"
+        app:layout_constraintStart_toEndOf="@+id/imcm1"
+        app:layout_constraintTop_toBottomOf="@+id/btnpeso" />
+
+
+    <ImageView
+        android:id="@+id/imcm2"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imcm1"
+        app:srcCompat="@drawable/ic_action_cm" />
+
+    <Button
+        android:id="@+id/btncm2"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_r"
+        android:text="cm cintura"
+        app:layout_constraintStart_toEndOf="@+id/imcm2"
+        app:layout_constraintTop_toBottomOf="@+id/btncm1" />
+
+    <Button
+        android:id="@+id/btncm3"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_r"
+        android:text="cm cadera"
+        app:layout_constraintStart_toEndOf="@+id/imcm3"
+        app:layout_constraintTop_toBottomOf="@+id/btncm2" />
+
+    <Button
+        android:id="@+id/btncm4"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_r"
+        android:text="cm muslo"
+        app:layout_constraintStart_toEndOf="@+id/imcm4"
+        app:layout_constraintTop_toBottomOf="@+id/btncm3" />
+
+    <Button
+        android:id="@+id/btnregisdatos"
+        android:layout_width="160dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="92dp"
+        android:background="@drawable/button_border"
+        android:gravity="center"
+        android:onClick="registrardieta"
+        android:text="Guardar datos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/usuario"
+        app:layout_constraintTop_toBottomOf="@+id/btncm4" />
+
+    <EditText
+        android:id="@+id/etpeso"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/btnpeso"
+        app:layout_constraintTop_toBottomOf="@+id/etdia" />
+
+    <EditText
+        android:id="@+id/etcmbrazo"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/btncm1"
+        app:layout_constraintTop_toBottomOf="@+id/etpeso" />
+
+    <EditText
+        android:id="@+id/etejercicio"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/btncm2"
+        app:layout_constraintTop_toBottomOf="@+id/etcmbrazo" />
+
+    <EditText
+        android:id="@+id/ettiempo"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/btncm3"
+        app:layout_constraintTop_toBottomOf="@+id/etejercicio" />
+
+    <EditText
+        android:id="@+id/etcmmuslo"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/btncm4"
+        app:layout_constraintTop_toBottomOf="@+id/ettiempo" />
+
+
+    <ImageView
+        android:id="@+id/imcm3"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/ic_action_cm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imcm2" />
+
+
+    <ImageView
+        android:id="@+id/imcm4"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imcm3"
+        app:srcCompat="@drawable/ic_action_cm" />
+
+    <!--<TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="Dinos tu nombre de usuario"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncm4" />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="138dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

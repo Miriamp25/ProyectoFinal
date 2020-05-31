@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#42CCDD"
+    android:orientation="vertical"
+    tools:context=".PantEjercicio">
+
+    <TextView
+        android:id="@+id/tventreno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="ENTRENO"
+        android:textSize="80sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Que te apetece entrenar hoy?"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/btngluteo"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="#42CCDD"
+        android:onClick="irgluteo"
+        app:srcCompat="@drawable/btngluteos" />
+
+    <ImageButton
+        android:id="@+id/btnbrazos"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#42CCDD"
+        android:onClick="irbrazo"
+        app:srcCompat="@drawable/btnbrazos" />
+
+    <ImageButton
+        android:id="@+id/btnabdomen"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#42CCDD"
+        android:onClick="irabdomen"
+        app:srcCompat="@drawable/btnabdomen" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_r"
+        android:onClick="registroentreno"
+        android:text="Registrar entreno" />
+
+</LinearLayout>

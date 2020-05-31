@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#42CCDD"
+    android:orientation="vertical"
+    tools:context=".PantPerfil">
+
+    <TextView
+        android:id="@+id/tvperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="PERFIL"
+        android:textSize="80sp" />
+
+    <Button
+        android:id="@+id/btnmostrarhistorialperfil"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_r"
+        android:text="Ver datos" />
+
+    <ListView
+        android:id="@+id/listviewperfil"
+        android:layout_width="324dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_border" />
+
+    <TableLayout
+        android:layout_width="400dp"
+        android:layout_height="172dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+
+            <Button
+                android:id="@+id/btnhisperiodo"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_r"
+                android:onClick="historialperiodo"
+                android:text="Historial periodo" />
+
+            <Button
+                android:id="@+id/btnhisdieta"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_r"
+                android:onClick="historialdieta"
+                android:text="Historial dieta" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="10dp">
+
+
+            <Button
+                android:id="@+id/btnhisentreno"
+                android:layout_width="170dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="112dp"
+                android:background="@drawable/button_r"
+                android:onClick="historialentreno"
+                android:text="Historial entreno" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/button_border"
+        android:onClick="cerrarsesion"
+        android:text="Cerrar sesion">
+
+
+    </Button>
+</LinearLayout>

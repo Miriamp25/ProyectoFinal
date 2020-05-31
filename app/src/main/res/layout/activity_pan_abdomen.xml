@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#42CCDD"
+    tools:context=".PanAbdomen">
+
+    <TextView
+        android:id="@+id/tvabdomen"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textAlignment="center"
+        android:textSize="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Abdómen" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagen1"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/aa1" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevación de pierna alterno y crunch"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/imagen2"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                app:srcCompat="@drawable/aa2" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Escalador con fitball"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/imagen3"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                app:srcCompat="@drawable/aa3" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevación de pierna alternada tumbado"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/imagen4"
+                android:layout_width="380dp"
+                android:layout_height="230dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                app:srcCompat="@drawable/aa4" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crunch y elevación de pierna con fitball"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:id="@+id/imagen5"
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/aa5" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plancha lateral con rotación torácica"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:id="@+id/imagen6"
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                app:srcCompat="@drawable/aa6" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plancha de codos a manos"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:id="@+id/imagen7"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                app:srcCompat="@drawable/aa7" />
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Elevación de pierna en banco inclinado"
+                android:textAlignment="center"
+                android:textSize="20sp"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

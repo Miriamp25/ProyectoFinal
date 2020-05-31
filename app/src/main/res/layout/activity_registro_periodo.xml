@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#42CCDD"
+    tools:context=".RegistroPeriodo">
+
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Cuéntanos"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="366dp"
+        android:layout_height="74dp"
+        android:gravity="center"
+        android:text="Cómo te sientes hoy"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+
+
+    <EditText
+        android:id="@+id/etdia"
+        android:layout_width="113dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <Button
+        android:id="@+id/btndia"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_r"
+        android:onClick="mostrarcalendario"
+        android:text="¿Que día es?"
+        app:layout_constraintStart_toEndOf="@+id/imdia"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imdia"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:srcCompat="@drawable/ic_action_age" />
+
+    <Spinner
+        android:id="@+id/spinnersangrado"
+        android:layout_width="145dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsangrado" />
+
+    <TextView
+        android:id="@+id/btnsangrado"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border"
+        android:text="TIPO DE SANGRADO"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/imsang"
+        app:layout_constraintTop_toBottomOf="@+id/btndia" />
+
+    <ImageView
+        android:id="@+id/imsang"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imdia"
+        app:srcCompat="@drawable/ic_action_gota" />
+
+    <ImageView
+        android:id="@+id/imadolor"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imsang"
+        app:srcCompat="@drawable/ic_action_dolor" />
+
+    <TextView
+        android:id="@+id/btncm1"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/border"
+        android:text="DOLORES"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/imadolor"
+        app:layout_constraintTop_toBottomOf="@+id/btnsangrado" />
+
+    <Spinner
+        android:id="@+id/spinnerdolor"
+        android:layout_width="145dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncm1" />
+
+    <ImageView
+        android:id="@+id/imemociones"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imadolor"
+        app:srcCompat="@drawable/ic_action_name" />
+
+    <TextView
+        android:id="@+id/btncm2"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/border"
+        android:text="EMOCIONES"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imemociones"
+        app:layout_constraintTop_toBottomOf="@+id/btncm1" />
+
+    <Spinner
+        android:id="@+id/spinneremociones"
+        android:layout_width="145dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncm2" />
+
+    <Button
+        android:id="@+id/btnregisdatos"
+        android:layout_width="160dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/button_border"
+        android:onClick="registrarperiodo"
+        android:text="Guardar datos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinneremociones" />
+
+    <TextView
+        android:id="@+id/tvsangrado"
+        android:layout_width="125dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/btnsangrado"
+        app:layout_constraintTop_toBottomOf="@+id/etdia" />
+
+    <TextView
+        android:id="@+id/tvdolor"
+        android:layout_width="125dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="76dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/btncm1"
+        app:layout_constraintTop_toBottomOf="@+id/tvsangrado" />
+
+    <TextView
+        android:id="@+id/tvemociones"
+        android:layout_width="125dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/btncm2"
+        app:layout_constraintTop_toBottomOf="@+id/tvdolor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

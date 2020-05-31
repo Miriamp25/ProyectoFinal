@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#42CCDD"
+    tools:context=".RegistroEntreno">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="Cuéntanos tu entreno"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/etdia"
+        android:layout_width="113dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toEndOf="@+id/btndia"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <Button
+        android:id="@+id/btndia"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_r"
+        android:onClick="mostrarcalendario"
+        android:text="¿Que día es?"
+        app:layout_constraintStart_toEndOf="@+id/imdia"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <ImageView
+        android:id="@+id/imdia"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:srcCompat="@drawable/ic_action_age" />
+
+    <Button
+        android:id="@+id/btnpeso"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_r"
+        android:text="Grupo muscular"
+        app:layout_constraintStart_toEndOf="@+id/imsang"
+        app:layout_constraintTop_toBottomOf="@+id/btndia" />
+
+    //Boton registrar datos
+
+    <ImageView
+        android:id="@+id/imsang"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imdia"
+        app:srcCompat="@drawable/ic_action_cm" />
+
+
+    <ImageView
+        android:id="@+id/imcm1"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imsang"
+        app:srcCompat="@drawable/ic_action_cm" />
+
+    <Button
+        android:id="@+id/btncm1"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_r"
+        android:text="Ejercicio"
+        app:layout_constraintStart_toEndOf="@+id/imcm1"
+        app:layout_constraintTop_toBottomOf="@+id/btnpeso" />
+
+    <ImageView
+        android:id="@+id/imcm2"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imcm1"
+        app:srcCompat="@drawable/ic_action_cm" />
+
+    <Button
+        android:id="@+id/btncm2"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_r"
+        android:text="Tiempo"
+        app:layout_constraintStart_toEndOf="@+id/imcm2"
+        app:layout_constraintTop_toBottomOf="@+id/btncm1" />
+
+
+    <Button
+        android:id="@+id/btnregisdatos"
+        android:layout_width="160dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="116dp"
+        android:background="@drawable/button_border"
+        android:onClick="registrarejercicio"
+        android:text="Guardar datos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/usuario"
+        app:layout_constraintTop_toBottomOf="@+id/btncm2" />
+
+    <EditText
+        android:id="@+id/etgmuscular"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/btnpeso"
+        app:layout_constraintTop_toBottomOf="@+id/etdia" />
+
+    <EditText
+        android:id="@+id/etejercicio"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/btncm1"
+        app:layout_constraintTop_toBottomOf="@+id/etgmuscular" />
+
+    <EditText
+        android:id="@+id/ettiempo"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/btncm2"
+        app:layout_constraintTop_toBottomOf="@+id/etejercicio" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
